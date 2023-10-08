@@ -16,14 +16,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory()->create([
-        //     'email' => 'admin@admin.com',
-        //     'password' => Hash::make('admin'),
-        //     'role' => 'admin',
-        //     'no_hp' => '08245621346154'
-        // ]);
-        // $this->call(KategoriSeeder::class);
-        // $this->call(ProdiSeeder::class);
+        \App\Models\User::factory()->create([
+            'email' => 'admin@admin.com',
+            'password' => Hash::make('admin'),
+            'role' => 'admin',
+            'no_hp' => '08245621346154'
+        ]);
+        $this->call(KategoriSeeder::class);
+        $this->call(ProdiSeeder::class);
         Kerjasama::factory()->count(100)->create();
         $prodi = Prodi::all();
         Kerjasama::all()->each(function ($kerjasama) use ($prodi) {

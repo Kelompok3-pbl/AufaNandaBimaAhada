@@ -16,6 +16,7 @@ class ProdiSeeder extends Seeder
     {
         $data = [
             ['nama_prodi'    =>  'Teknik Mesin'],
+            ['nama_prodi'    =>  'Manajemen Bisnis Pariwisata'],
             ['nama_prodi'    =>  'Teknik Sipil'],
             ['nama_prodi'    =>  'Agribisnis'],
             ['nama_prodi'    =>  'Teknik Informatika'],
